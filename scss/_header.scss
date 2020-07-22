@@ -1,0 +1,57 @@
+.header {
+    height: 40rem;
+    overflow: hidden;
+    position: relative;
+
+    &__image {
+        height: 40rem;
+        object-fit: cover;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -2;
+    }
+
+    &__logo {
+        width: 30rem;
+    }
+
+    &__container {
+        margin-top: 1rem;
+    }
+
+    &__menu {
+        text-align: end;
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        li {
+            display: inline-block;
+            &:first-child {
+                a {
+                    margin-left: 0;
+                }
+            }
+            &:last-child {
+                a {
+                    margin-right: 0;
+                }
+            }
+            a {
+                color: #fff;
+                margin: 0 2rem;
+                font-weight: bold;
+            }
+        }
+        .current_page_item, .current-menu-item {
+            a {
+                border-bottom: 2px solid $color-primary;
+            }
+            
+        }
+    }
+}

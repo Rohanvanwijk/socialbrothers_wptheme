@@ -1,0 +1,58 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+    background-color: $color-grey-100;
+}
+
+.wrapper {
+    max-width: 90rem;
+    margin: 0 auto;
+    min-height: calc(100vh - 47px);
+}
+
+.screen-reader-text {
+    display: none;
+}
+
+.page-title {
+    color: #fff;
+    text-align: center;
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.label {
+    display: block;
+}
+
+.input {
+    background-color: $color-grey-100;
+    padding: .5rem 1rem;
+    border: none;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-4 {
+    margin-bottom: 4rem;
+}
+
+.btn {
+    border: none;
+    border-radius: 4rem;
+    padding: .5rem 4rem;
+
+    &--primary {
+        background-color: $color-primary;
+        color: #fff;
+    }
+}
